@@ -2,7 +2,6 @@ package com.sparta.week1.product;
 
 import com.sparta.week1.category.CategoryRepository;
 import com.sparta.week1.dto.product.CreateProductDto;
-import com.sparta.week1.dto.product.ProductDto;
 import com.sparta.week1.entity.Category;
 import com.sparta.week1.entity.Product;
 import jakarta.transaction.Transactional;

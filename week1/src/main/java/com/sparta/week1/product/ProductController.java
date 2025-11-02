@@ -29,7 +29,7 @@ public class ProductController {
     }
 
     /**
-     * id로 상품 조회
+     * 상품 상세 조회
      */
     @GetMapping("/{id}")
     public ResponseEntity<Product> getProduct(@PathVariable Long id) {
