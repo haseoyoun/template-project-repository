@@ -2,11 +2,8 @@ package com.sparta.week1.category;
 
 import com.sparta.week1.dto.category.CreateCategoryDto;
 import com.sparta.week1.entity.Category;
-import com.sparta.week1.entity.Product;
 import jakarta.transaction.Transactional;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 

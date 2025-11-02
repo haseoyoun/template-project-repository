@@ -27,6 +27,9 @@ public class Order {
     @Column(name = "quantity")
     private int quantity;
 
+    @Column(name = "status", columnDefinition = "varchar(30) default 'pending'")
+    private String status;
+
     @JsonBackReference
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id")
@@ -42,9 +45,14 @@ public class Order {
     private List<Refund> items = new ArrayList<>();
 
     @Builder
-    public Order(int quantity, User user, Product product) {
+    public Order(int quantity, User user, Product product, String status) {
         this.quantity = quantity;
         this.user = user;
         this.product = product;
+        this.status = status;
+    }
+
+    public void updateStatus(String status) {
+        this.status = status;
     }
 }
