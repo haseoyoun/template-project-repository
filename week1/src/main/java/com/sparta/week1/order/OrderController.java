@@ -3,7 +3,6 @@ package com.sparta.week1.order;
 import com.sparta.week1.dto.order.CreateOrderDto;
 import com.sparta.week1.entity.Order;
 import lombok.RequiredArgsConstructor;
-import org.springframework.data.repository.query.Param;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
